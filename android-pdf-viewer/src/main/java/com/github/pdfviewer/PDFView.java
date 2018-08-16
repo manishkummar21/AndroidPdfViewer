@@ -13,7 +13,6 @@ public class PDFView {
 
         public BaseBuilder(Context context) {
             this.config = new PDFConfig();
-
         }
     }
 
@@ -27,16 +26,21 @@ public class PDFView {
             super(fragment.getActivity());
         }
 
-        public Builder setfilepath(String filepath) {
+        public Builder fromfilepath(String filepath) {
             config.setFilepath(filepath);
             return this;
         }
 
 
-        public Builder setSwipeOrientation(int swipeOrientation) {
-            config.setSwipeorientation(swipeOrientation);
+        public Builder swipeHorizontal(boolean swipeOrientation) {
+            config.setSwipeorientation(swipeOrientation ? 0 : 1);
             return this;
         }
+
+//        public Builder fromurl(String url) {
+//            config.setNetwork_url(url);
+//            return this;
+//        }
 
         public abstract void start();
 

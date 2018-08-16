@@ -15,14 +15,14 @@ import java.io.InputStream;
 
 public class PdfLoad extends AppCompatActivity {
 
-    private static final String FILENAME = "sample101.pdf";
+    private static final String FILENAME = "sample.pdf";
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-//        OpenfileFromAsset();
-        Pickpdfstorage();
+        OpenfileFromAsset();
+//        Pickpdfstorage();
 
     }
 
@@ -61,8 +61,8 @@ public class PdfLoad extends AppCompatActivity {
     private void OpenPdfActivity(String absolutePath) {
 
         PDFView.with(PdfLoad.this)
-                .setfilepath(absolutePath)
-                .setSwipeOrientation(1)
+                .fromfilepath(absolutePath)
+                .swipeHorizontal(false)
                 .start();
     }
 

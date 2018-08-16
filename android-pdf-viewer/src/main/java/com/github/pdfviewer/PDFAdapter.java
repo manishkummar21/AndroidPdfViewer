@@ -6,7 +6,6 @@ import android.support.v4.view.PagerAdapter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 public class PDFAdapter extends PagerAdapter {
@@ -34,7 +33,7 @@ public class PDFAdapter extends PagerAdapter {
 
         View itemView = inflater.inflate(R.layout.each_page, container, false);
 
-        PDFZoomImageView imageView = (PDFZoomImageView) itemView.findViewById(R.id.image);
+        PDFZoomImageView imageView = (PDFZoomImageView ) itemView.findViewById(R.id.image);
 
         imageView.setImageBitmap(listener.showPage(position));
 

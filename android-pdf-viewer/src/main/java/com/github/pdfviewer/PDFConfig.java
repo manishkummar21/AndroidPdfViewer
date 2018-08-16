@@ -9,6 +9,7 @@ public class PDFConfig implements Parcelable {
 
     private String filepath;
     private int swipeorientation;
+//    private String network_url;
 
     public PDFConfig() {
 
@@ -17,6 +18,7 @@ public class PDFConfig implements Parcelable {
     protected PDFConfig(Parcel in) {
         this.filepath = in.readString();
         this.swipeorientation = in.readInt();
+//        this.network_url = in.readString();
     }
 
 
@@ -36,10 +38,19 @@ public class PDFConfig implements Parcelable {
         this.swipeorientation = swipeorientation;
     }
 
+//    public String getNetwork_url() {
+//        return network_url;
+//    }
+//
+//    public void setNetwork_url(String network_url) {
+//        this.network_url = network_url;
+//    }
+
     @Override
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeString(filepath);
         dest.writeInt(swipeorientation);
+//        dest.writeString(network_url);
 
     }
 

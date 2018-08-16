@@ -100,6 +100,7 @@ public class PDFViewActivity extends AppCompatActivity implements IShowPage {
         if (mFileDescriptor != null) {
             mPdfRenderer = new PdfRenderer(mFileDescriptor);
         }
+
     }
 
 
