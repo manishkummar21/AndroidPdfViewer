@@ -32,10 +32,13 @@ dependencies {
  
  # Load a PDF file from anywhere in your code
  
+ ```
  PDFView.with(context)
         .fromfilepath(fileapth)
         .swipeHorizontal(false) //if false pageswipe is vertical otherwise its horizontal
 	.start();
+```	
+	
 	
 //Example of loading pdf file from asset folder
  ```
