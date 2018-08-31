@@ -70,6 +70,9 @@ dependencies {
                 .start()
  ```
  ![ScreenShot](https://github.com/manishkummar21/AndroidPdfViewer/blob/master/screenshot_01.png)
+ 
+ ![ScreenShot](https://github.com/manishkummar21/AndroidPdfViewer/blob/master/screenshot_02.png)
+
 
 	
 	
