@@ -69,6 +69,8 @@ dependencies {
                 .swipeHorizontal(false)
                 .start()
  ```
+ ![ScreenShot](https://github.com/manishkummar21/AndroidPdfViewer/blob/master/screenshot_01.png)
+
 	
 	
 	
